@@ -1,0 +1,168 @@
+body {
+    font-family: 'Inter', sans-serif; /* Applied Google Font */
+    padding-top: 56px; /* Space for fixed navbar */
+}
+
+/* Hero Section Adjustments */
+.hero-section {
+    min-height: 100vh; /* Ensure hero section takes full viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+#logo {
+    border-radius: 35%;
+    max-width: 360px;
+    transition: transform 0.3s ease-in-out; /* Added transition for subtle animation */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important; /* Stronger shadow for logo */
+}
+
+#logo:hover {
+    transform: scale(1.02); /* Subtle scale on hover */
+}
+
+@media (max-width: 767px) {
+	#logo {
+		max-width: 240px;
+    }
+    .hero-section {
+        min-height: auto; /* Remove min-height on small screens */
+        padding-top: 80px; /* Adjust padding for smaller screens */
+        padding-bottom: 40px;
+    }
+}
+
+.gradient-bg {
+	background: linear-gradient(-45deg, #1b72b5, #0096cb, #00b7c4); /* Removed #00d4a8 */
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Text shadow for better readability on gradient background */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Card Hover Effect */
+.product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px) scale(1.01); /* Lift and slightly enlarge on hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Enhanced shadow */
+}
+
+/* Custom button styling for the hero section */
+.btn-light {
+    color: #1b72b5; /* Match a color from the gradient */
+    border-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    color: #0096cb; /* Change text color on hover */
+}
+
+/* Custom styling for carousel images to ensure they are the same size */
+.carousel-item img {
+    height: 500px; /* Set a fixed height for all carousel images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 300px; /* Adjust height for mobile screens */
+    }
+}
+
+/* Styling for the modal image */
+#modalImage {
+    max-height: 80vh; /* Limit height to prevent overflow on larger images */
+    object-fit: contain; /* Ensure the whole image is visible */
+}
+
+/* Testimonial section enhancements */
+#testimonial {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/temoin.jpg'); /* Overlay with gradient */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensure text is readable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Stronger text shadow */
+}
+
+.testimonial-img {
+    width: 220px; /* Fixed size for consistency */
+    height: 220px;
+    object-fit: cover; /* Ensure image covers the area */
+    border: 5px solid rgba(255, 255, 255, 0.8); /* White border */
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place at the bottom */
+    right: 30px; /* Place at the right */
+    z-index: 99; /* Make sure it's above other elements */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #007bff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Navbar adjustments for better visibility */
+.navbar-brand img {
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Subtle border for logo in navbar */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00d4a8 !important; /* Highlight on hover */
+}
+
+/* General section padding and headings */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h2.display-4 {
+    margin-bottom: 3rem !important;
+    font-size: 2.5rem; /* Adjust for smaller screens */
+}
+
+@media (min-width: 768px) {
+    h2.display-4 {
+        font-size: 3.5rem;
+    }
+}

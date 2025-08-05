@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les leurres du Martin pêcheur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/images/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle me-2">
+                <span class="fw-bold">Les leurres du Martin pêcheur</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#le-processus" onclick="scrollToSection('le-processus')">Le Processus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nos-creations" onclick="scrollToSection('nos-creations')">Nos Créations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial" onclick="scrollToSection('testimonial')">Témoignage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nous-joindre" onclick="scrollToSection('nous-joindre')">Nous Joindre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-5 hero-section">
+        <div class="container col-xxl-8 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6"> 
+                    <img id="logo" src="./assets/images/logo.jpg" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Logo Leurres du Martin pêcheur" width="700" height="500" loading="lazy"> 
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-shadow">Les leurres du Martin pêcheur</h1>
+                    <p class="lead text-shadow">Établie dans la splendide région de la Petite-Nation, notre entreprise familiale fabrique des leurres de pêche de haute qualité, faits à la main, pour les passionnés de pêche comme vous. De la sélection des matériaux à la finition, chaque étape est réalisée avec soin. En choisissant nos leurres, vous soutenez non seulement une entreprise québécoise, mais vous vous équipez d'outils de pêche robustes et efficaces, conçus pour durer.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-light btn-lg px-4 me-md-2 rounded-pill shadow" onclick="scrollToSection('le-processus')">Découvrir nos leurres</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Le Processus -->
+    <section id="le-processus" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold display-4">Le Processus</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="lead text-center text-md-start">
+                        Chaque leurre est une œuvre d'art faite à la main, conçue pour attirer les prises les plus convoitées. Notre processus commence par la sélection de matériaux de haute qualité, suivi d'une personnalisation minutieuse. Le revêtement en poudre est ensuite appliqué, puis cuit au four pour garantir une finition durable et éclatante qui résiste aux conditions les plus extrêmes. C'est ce souci du détail qui fait la différence entre un bon leurre et un leurre exceptionnel.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div id="processusCarousel" class="carousel slide rounded shadow-lg" data-bs-ride="carousel" data-bs-interval="3500">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#processusCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#processusCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#processusCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/1.jpg" class="d-block w-100" alt="Étape 1 du processus de fabrication">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/2.jpg" class="d-block w-100" alt="Étape 2 du processus de fabrication">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/3.jpg" class="d-block w-100" alt="Étape 3 du processus de fabrication">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#processusCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#processusCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Créations Section -->
+    <section class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <h2 id="nos-creations" class="text-center mb-5 fw-bold display-4">Nos Créations</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/4.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/4.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Conçus pour exceller dans toutes les conditions, ces leurres captent la lumière de manière spectaculaire, créant des éclats irrésistibles qui attirent les poissons de loin. Parfaits pour la truite, le saumon, le brochet et la perche.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/5.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/5.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Conçus pour maximiser la visibilité et le contraste sous l'eau. Les motifs audacieux et les couleurs vives agissent comme un signal d'alarme pour les poissons, les incitant à frapper avec force. Un incontournable pour les pêcheurs expérimentés.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/6.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/6.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Notre cuillère "Martin Pêcheur" est le leurre idéal pour la pêche au lancer léger. Sa conception légère et sa petite taille en font le choix parfait pour la truite, la perchaude et autres petits prédateurs.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/7.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/7.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Lorsque les poissons se réfugient dans les profondeurs, ce leurre est l'outil qu'il vous faut. Sa bavette allongée et sa forme robuste lui permettent de plonger rapidement et d'atteindre des zones plus profondes.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/8.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/8.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Ce leurre est un spécialiste des eaux claires.. Sa conception élancée et son corps flottant ou suspensif lui permettent d'imiter un petit poisson agonisant avec des mouvements brusques et imprévisibles.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/9.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/9.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Constituez votre boîte de pêche avec notre assortiment de leurres Jerkbait/Crankbait, conçus pour couvrir une multitude de scénarios de pêche. Cette collection a été soigneusement sélectionnée pour offrir une variété de couleurs et de formes.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/10.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/10.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Ces leurres sont conçus pour imiter une petite pieuvre ou une crevette. Les jupes de silicone vibrantes et les couleurs fluorescentes créent une action de nage unique qui est irrésistible pour le saumon, le flétan et d'autres poissons marins.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/11.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/11.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Nos leurres montés sur des têtes de jig sont la solution idéale pour imiter un petit poisson-appât qui nage avec naturel. Le corps souple et la queue articulée créent un mouvement de nage fluide et séduisant qui attire irrésistiblement les poissons.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/12.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/12.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Ce "Swimbait" est conçu pour les pêcheurs qui recherchent un leurre souple mais durable avec un maximum d'action. Sa construction en vinyle résistant et sa finition pailletée lui donnent une apparence réaliste sous l'eau.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/13.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/13.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Ce kit a été pensé pour le pêcheur qui recherche de la diversité et de l'efficacité. Chaque leurre combine une cuillère, un mini-jig ou un corps en plastique et des billes colorées pour créer une présentation unique.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/14.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/14.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Découvrez notre collection de leurres à la cuillère, un assortiment complet conçu pour la pêche au lancer léger. Chaque leurre combine une cuillère scintillante, des billes colorées et un hameçon simple de qualité pour une efficacité maximale.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/15.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/15.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Plongez dans notre collection ultime de leurres à cuillère, conçue pour les pêcheurs exigeants. Chaque leurre est une œuvre d'art fonctionnelle, combinant des cuillères aux motifs uniques, des perles colorées et des hameçons solides.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/16.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/16.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Fabriqués dans un vinyle de haute qualité, leur corps souple et leur queue vibrante créent une action de nage incroyablement réaliste qui incite les poissons prédateurs à l'attaque. Cet assortiment est idéal pour toutes les conditions.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/17.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/17.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Pour la pêche au fond, rien ne vaut notre collection de leurres "créatures et vers". Ils imitent des insectes, des vers, des crevettes ou des petits crustacés. Leurs formes et leurs textures uniques incitent les poissons à mordre.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm product-card h-100">
+                        <img class="bd-placeholder-img card-img-top" src="./assets/images/18.jpg" style="object-fit: cover; width: 100%; height: 225px;" alt="Leurre de pêche 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-src="./assets/images/18.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Nos têtes de jig sont l'élément parfait pour compléter vos leurres. Elles sont conçues pour être attrayantes en elles-mêmes, avec des finitions colorées et lumineuses qui attirent l'attention des poissons.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill" onclick="scrollToSection('nous-joindre')">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="py-5 bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4 fw-bold display-4 text-shadow">Témoignage</h2>
+        <h3 class="text-white-75 mb-4 text-shadow">"Je n'avais jamais pêché un poisson aussi gros de toute de ma vie. Un énorme merci aux leurres du Martin pêcheur!"</h3>
+        <img class="mt-3 mb-3 img-fluid rounded-circle shadow-lg testimonial-img" src="./assets/images/temoin.jpg" alt="Garçon avec gros poisson dans les mains">
+        <h4 class="fw-bold text-shadow"><em>Thomas</em></h4>
+      </div>
+    </section>
+
+    <!-- Nous Joindre Section -->
+    <section id="nous-joindre" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold display-4">Nous Joindre</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p class="lead">Pour toute question ou commande, n'hésitez pas à nous contacter :</p>
+                    <p class="mb-2 fs-5">
+                        <img src="./assets/images/telephone.svg" alt=""><strong> Téléphone <img src="./assets/images/telephone.svg" alt=""> : </strong><a href="tel:+18196818204" class="text-decoration-none text-primary fw-bold">819 681-8204</a>
+                    </p>
+                    <p class="mb-2 fs-5">
+                        <img src="./assets/images/envelope.svg" alt=""><strong> Email <img src="./assets/images/envelope.svg" alt=""> : </strong><a href="mailto:leurresdumartinpecheur@hotmail.com" class="text-decoration-none text-primary fw-bold">leurresdumartinpecheur@hotmail.com</a>
+                    </p>
+                    <p class="fs-5">
+                        <img src="./assets/images/facebook.svg" alt=""><strong> Facebook <img src="./assets/images/facebook.svg" alt=""> : </strong><a href="https://www.facebook.com/people/Les-leurres-du-Martin-p%C3%AAcheur/61561914305478/" class="text-decoration-none text-primary fw-bold">Les leurres du Martin pêcheur</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; 2025 Les Leurres du Martin pêcheur. Tous droits réservés.</small>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" class="img-fluid rounded shadow-lg" id="modalImage" alt="Enlarged Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top" class="btn btn-primary rounded-circle shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
