@@ -159,6 +159,10 @@ h2.display-4 {
 
 @media (max-width: 575px) {
     .hyperlink {
+        font-size: 1rem;
+    }
+
+    .navbar span {
         font-size: 1.125rem;
     }
 }
