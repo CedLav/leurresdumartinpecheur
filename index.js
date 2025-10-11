@@ -2,13 +2,25 @@
         imageModal.addEventListener('show.bs.modal', event => {
             // Button that triggered the modal
             const opener = event.relatedTarget;
+            
+            // 1. Extract the title from the data-bs-title attribute
+            const imageTitle = opener.getAttribute('data-bs-title'); 
+            
             // Extract info from data-bs-image-src attribute
             const imageSrc = opener.getAttribute('data-bs-image-src');
+            
             // Update the modal's content.
             const modalImage = imageModal.querySelector('#modalImage');
             modalImage.src = imageSrc;
+            
+            // 2. Find the modal title element (assuming it has the class 'modal-title')
+            const modalTitle = imageModal.querySelector('.modal-title');
+            
+            // 3. Set the text content of the modal title
+            if (modalTitle) {
+                modalTitle.textContent = imageTitle;
+            }
         });
-
         /**
          * Scrolls the page smoothly to a specified section.
          * @param {string} sectionId The ID of the section to scroll to.
