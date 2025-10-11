@@ -46,20 +46,28 @@ body, html {
 }
 
 .gradient-bg {
-	background: linear-gradient(-45deg, #1b72b5, #0096cb, #00b7c4); /* Removed #00d4a8 */
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background: 
+        linear-gradient(
+            -45deg, 
+            rgba(27, 114, 181, 0.8),
+            rgba(0, 150, 203, 0.8),
+            rgba(0, 183, 196, 0.8)
+        ),
+        url('./assets/images/water.jpg'); 
+    background-size: 400% 400%, cover;
+    background-position: center center;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 50%, center center; 
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 100% 50%, center center;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 0% 50%, center center;
 	}
 }
 
