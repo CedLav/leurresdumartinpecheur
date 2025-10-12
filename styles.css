@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'FishFont';
+  src: url('./assets/fonts/fish/HookFishingNormal.ttf') format('truetype'), /* Add TTF as a fallback */
+       url('./assets/fonts/fish/HookFishingNormal.otf') format('opentype'); /* Add OTF as a fallback */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+.inline-icon {
+width: 1em;
+height: 1em;
+vertical-align: middle;
+margin-right: 25px;
+margin-left: 25px;
+}
+
+h2 {
+    font-family: FishFont;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     padding-top: 56px;
